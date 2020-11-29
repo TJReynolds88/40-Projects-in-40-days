@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+/* Colors
+ background - #45566B;
+ pw-background - #212D3A;
+ font white - #FCFBFB;
+ light font - #414D59;
+ grey - #767F88;
+ border & Checkboxs - #F1304D;
+
+
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Inconsolata', monospace;
+    background-color: #45566B;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FCFBFB;
+    min-height: 100vh;
+}
+
+.pw-container {
+    background-color:#212D3A;
+    width: 400px;
+    border-left: 4px solid #F1304D;
+    box-shadow: 0 5px 10px rgba(24, 27, 39, 0.5), 0 15px 40px rgba(28, 30, 34, 0.2);
+    border-radius: 5px;
+}
+
+.pw-header{
+    padding: 1rem;
+}
+
+.pw-body{
+    padding: 0.5rem 1rem;
+}
+
+.pw {
+    background-color: #45566B;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    font-size: 2rem ;
+}
+
+.pw button {
+    position: absolute;
+    background-color: #767F88;
+    color: #FCFBFB;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-50%, 50%);
+    cursor: pointer;
+}
+
+.pw button:hover {
+    background-color: #6a7179;
+
+}
+
+.pw button:hover::after {
+    content:'Copy';
+    position: absolute;
+    top: 2.5rem;
+    left: 1.5rem;
+    min-width: 50px;
+    border: 1px solid #414D59;
+    color: #FCFBFB;
+    background-color: #212D3A;
+    border-radius: 25px;
+    z-index: 1;
+    outline: none;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+    color: #555b61;
+    font-weight: bold;
+}
+
+.generate {
+    display: block;
+    background-color: #767F88;
+    color: #FCFBFB;
+    font-weight: 200;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+.generate:hover {
+    background-color: #6a7179;
+
+}
