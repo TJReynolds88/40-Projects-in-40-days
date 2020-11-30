@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.countdown-container {
+    display: flex;
+
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 400;
+    margin-top: 5rem;
+
+}
+
+
+.big-text {
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+    font-weight: 600;
+}
+
+.countdownEl{
+    text-align: center;
+}
+
+countdownEl span {
+    font-size: 1.5rem;
+}
