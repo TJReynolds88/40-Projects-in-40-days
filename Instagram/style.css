@@ -9,60 +9,11 @@ body{
     margin: 0;
     font-family: 'Oleo Script', cursive;
     justify-content: center;
+    display: flex;
     align-items: center;
 }
 
 h1{
-    margin: 40px 150px 30px 150px;
+    margin: 0;
     padding: 10px;
-    text-align: center;
-    border: 3px solid ;
-    border-radius: 10px;
-    transition: 0.75s ease-in;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-    max-width: 1000px;
-}
-
-img {
-    object-fit: cover;
-    margin: 10px;
-    height: 300px;
-    width: 300px;
-    max-width: 100%;
-
-}
-
-
-
-@media screen and (max-width: 990px) {
-	img {
-		height: 250px;
-		width: 250px;
-    }
-    h1{
-        margin: 40px 30px 30px 30px;
-    }
-    
-}
-
-@media screen and (max-width: 810px) {
-	img {
-		height: 200px;
-		width: 200px;
-    }
-}
-
-@media screen and (max-width: 440px) {
-	img {
-		height: 300px;
-		width: 300px;
-    }
-
 }
