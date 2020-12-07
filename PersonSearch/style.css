@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #e5e9f0;
+}
+.container {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  margin-top: 20px;
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  background-color: #ff74ae;
+  background: -webkit-radial-gradient(bottom right, #ff4a56, #fd96c1);
+  background: radial-gradient(at bottom right, #fd424f, #fd96c1);
+  color: #fff;
+  padding: 40px 30px 10px 20px;
+}
+
+.header input {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 0;
+  border-radius: 50px;
+  color: rgb(122, 122, 122);
+  font-family: "Muli", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  top: 10px;
+  right: 10px;
+  outline: none;
+}
+
+.title {
+  margin: 0;
+}
+.subtitle {
+  display: inline-block;
+  margin: 5px 0 0;
+  opacity: 0.8;
+}
+
+.users-list {
+  background-color: #fff;
+  list-style: none;
+  margin: 0;
+  height: 300px;
+  overflow-y: auto;
+  padding: 0;
+  scroll-snap-type: proximity;
+  scroll-snap-points-y: repeat(25px);
+  scroll-snap-type: y proximity;
+}
+
+.users-list li {
+  display: flex;
+  padding: 20px;
+  scroll-snap-align: center;
+}
+
+.users-list li:not(:last-of-type) {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.users-list li.hide {
+  display: none;
+}
+
+.users-list li img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.user-info {
+  margin-left: 10px;
+}
+
+.user-info h3 {
+  margin: 0 0 10px;
+}
+
+.user-info p {
+  font-size: 12px;
+}
