@@ -19,7 +19,7 @@ body{
 }
 
 .teddy .ear{
-    background-color: #a9512e;
+    background-color: #B65534;
     border-radius: 50%;
     position: absolute;
     top: 1px;
@@ -29,14 +29,30 @@ body{
     z-index: -1;
 }
 
+.teddy .ear::after{
+    background-color: #D9A463;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    border-radius: 50%;
+    height: 60px;
+    width: 50px;
+    content: '';
+    z-index: 2;
 
+}
 
 .teddy .ear.left {
     left: 0;
 }
 
+.teddy .ear.left::before {
+    left: 0;
+ 
+}
 
-.teddy .ear.right {
+
+.teddy .ear.right{
     right: 0;
 }
 
@@ -80,6 +96,19 @@ body{
     font-size: 25px;
 }
 
+.teddy .nose::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 70px;
+    width: 80px;
+    border-radius: 50%;
+    transform: translate(-50%);
+    background-color: #D9A463;
+    z-index: -2;
+}
+
 
 .teddy .mouth {
 	background: transparent;
@@ -92,4 +121,4 @@ body{
 	transform: translate(-50%);
 	height: 50px;
 	width: 50px;
-}
+} 
