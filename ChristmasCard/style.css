@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+body {
+  text-align: center;
+  background: #ffb4b5;
+}
+.card__container {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 768px) {
+  .open .card__container {
+    transform: translate(0%, -50%);
+  }
+}
+.card {
+  max-width: 400px;
+  max-height: 600px;
+  width: 80vw;
+  height: 120vw;
+  transform-style: preserve-3d;
+  transform: rotateX(30deg);
+  transition: all 1s ease;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+}
+.open .card {
+  transform: rotateX(0deg);
+}
+.card__panel {
+  border: 8px solid #000;
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transition: all 1s ease;
+  backface-visibility: visible;
+  transform-origin: left;
+  transform-style: preserve-3D;
+  transform: rotate3d(0, 1, 0, 0deg);
+}
+.card__panel--front {
+  backface-visibility: hidden;
+  background-color: #d21905;
+  z-index: 1;
+}
+
+.btn-container {
+  height: 600px;
+  width: 200px;
+  background-color: #fff;
+}
+
+.btn {
+  border-radius: 50px;
+  background-color: #000;
+  height: 50px;
+  width: 50px;
+  margin: 70px;
+}
+
+.belt {
+  height: 170px;
+  width: 405px;
+  background-color: #000;
+  position: absolute;
+  z-index: 3;
+  top: 320px;
+}
+
+.buckle {
+  height: 150px;
+  width: 200px;
+  border: 20px solid gold;
+  position: relative;
+  top: -10px;
+  left: 83px;
+}
+.open .card__panel--front {
+  transform: rotate3d(0, 1, 0, -170deg);
+}
+.card__panel--inside-left {
+  background-color: #d21905;
+  z-index: 0;
+}
+.open .card__panel--inside-left {
+  transform: rotate3d(0, 1, 0, -170deg);
+}
+.card__panel--inside-right {
+  border-left: none;
+  background-color: #d21905;
+  z-index: -1;
+}
+
+.card__panel--inside-right h1 {
+  border-left: none;
+
+  font-size: 5rem;
+  font-family: "Dancing Script", serif;
+}
