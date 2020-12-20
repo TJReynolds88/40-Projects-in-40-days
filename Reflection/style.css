@@ -1,0 +1,40 @@
+.bgImage {
+  background-image: url("https://images.unsplash.com/photo-1513604170399-52192b510508?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 50px auto;
+  width: 80vw;
+  height: 60vh;
+}
+
+.bgImage::after {
+  background-repeat: no-repeat;
+  background-image: inherit;
+  background-size: cover;
+  background-position: right bottom;
+  content: "";
+  position: absolute;
+  bottom: -101%;
+  width: inherit;
+  height: inherit;
+  transform: rotateX(180deg);
+}
+
+.bgImage::before {
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.2),
+    #ffffff 60%,
+    #ffffff
+  );
+  content: "";
+  position: absolute;
+  bottom: -101%;
+  width: inherit;
+  height: inherit;
+  transform: rotateX(180deg);
+  z-index: 100;
+}
