@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #F0EFEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    min-height: 550px;
+    width: 350px;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.3);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    padding: 5px;
+}
+
+h1,h2{
+    color:#616473;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+
+h3{
+    color: #CED0F6;
+}
+
+
+button{
+    height: 50px;
+    width: 125px;
+    color: #fff;
+    background-color: #00CE6A;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    position: absolute;
+    bottom: -25px;
+    left: 115px;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+button:active{
+        -webkit-transform: scale(.8);
+}
+
+input{
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid #BDBFCB;
+    font-size: 1.2rem;
+}
+
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+ul li.checked {
+    color: #d1d3dd;
+    opacity: 0.7;
+  }
+
+
+
+
+li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 1.25rem;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.fa-smile::before{
+    font-size: inherit;
+    color: #00CE6A; 
+}
+
+.fa-meh:before{
+    font-size: 1.2rem;
+    color: #BDBFCB;
+}
