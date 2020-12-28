@@ -52,6 +52,10 @@ input{
     
 }
 
+#status {
+    text-transform: capitalize;
+}
+
 
 h2{
     padding: 10px 30px;
