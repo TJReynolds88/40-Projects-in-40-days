@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seetings</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <p>Font Settings</p>
+            <div id="display">Abc</div>
+            <div id="font-style"></div>
+            <div class="toggle">
+                <input type="checkbox" id="toggle" />
+                <label for="toggle"></label>
+            </div>
+        </div>
+        <div class="right-side">
+            <p>Standard</p>
+            <select name="fonts" id="fonts">
+                <option value="volkorn">Volkorn</option>
+                <option value="muli">Muli</option>
+                <option value="roboto">Roboto</option>
+                <option value="playfair">Playfair Display</option>
+              </select>
+              <p>Style</p>
+              <select name="style" id="style">
+                <option value="normal">Normal</option>
+                <option value="bold">Bold</option>
+                <option value="italic">Italic</option>
+              </select>
+              <p>Colors</p>
+              <input type="checkbox" name="blue" id="blue">
+              <input type="checkbox" name="red" id="red">
+              <input type="checkbox" name="orange" id="orange">
+              <input type="checkbox" name="green" id="green">
+              <p>Size</p>
+              <input type="range" min="10" max="100" value="50" class="slider" id="fontsize">
+              <ul>
+                  <li>A</li>
+                  <li><span id="value"></span></li>
+                  <li>A</li>
+              </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
