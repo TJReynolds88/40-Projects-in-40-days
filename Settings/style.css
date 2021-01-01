@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;  
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#E7EAF3;
+}
+
+.container{
+    height: 400px;
+    min-width: 800px;
+    overflow: hidden;
+    display: flex;
+ 
+}
+
+.left-side{
+    width:400px;
+    background-color: #2785FF;
+    padding: 50px;
+
+}
+
+.right-side{
+    width: 400px;
+    background-color: #FFFFFF;
+    padding: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+
+
+#blue{
+    background-color: #2785FF;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+}

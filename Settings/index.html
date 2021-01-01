@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seetings</title>
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- https://collectui.com/designers/shabmajeed/settings -->
 </head>
 <body>
     <div class="container">
@@ -19,9 +21,9 @@
         <div class="right-side">
             <p>Standard</p>
             <select name="fonts" id="fonts">
+                <option value="roboto">Roboto</option>
                 <option value="volkorn">Volkorn</option>
                 <option value="muli">Muli</option>
-                <option value="roboto">Roboto</option>
                 <option value="playfair">Playfair Display</option>
               </select>
               <p>Style</p>
@@ -31,10 +33,12 @@
                 <option value="italic">Italic</option>
               </select>
               <p>Colors</p>
-              <input type="checkbox" name="blue" id="blue">
-              <input type="checkbox" name="red" id="red">
-              <input type="checkbox" name="orange" id="orange">
-              <input type="checkbox" name="green" id="green">
+              <div class="input-colors">
+                <input type="checkbox" name="blue" id="blue">
+                <input type="checkbox" name="red" id="red">
+                <input type="checkbox" name="orange" id="orange">
+                <input type="checkbox" name="green" id="green">
+              </div>
               <p>Size</p>
               <input type="range" min="10" max="100" value="50" class="slider" id="fontsize">
               <ul>
